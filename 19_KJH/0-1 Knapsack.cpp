@@ -17,11 +17,11 @@ int main() {
         cin >> W >> V;
         for(int j = 0; j <= K; ++j) {
             if(W <= j) {
-				dp[j][i] = max(dp[j][i - 1], dp[j - W][i - 1] + V);
-			}
+                dp[j][i] = max(dp[j][i - 1], dp[j - W][i - 1] + V);
+            }
             else {
-				dp[j][i] = dp[j][i - 1];
-			}
+                dp[j][i] = dp[j][i - 1];
+            }
         }
     }
     
